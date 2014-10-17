@@ -1,0 +1,7 @@
+<h3><%= @job.title %></h3>
+
+<% if logged_in? and current_user == @job.user %>
+
+	<%= link_to "Edit", edit_job_path(@job) %>
+
+<% end %>

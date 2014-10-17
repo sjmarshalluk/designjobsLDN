@@ -5,3 +5,49 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Job.all.delete_all
+
+users = User.create (
+	[
+		{
+			name: "Steve Marshall",
+			email: "hello@sjmarshalluk.com",
+			username: "sjmarshalluk",
+			password: "steve1",
+			password_confirmation: "steve1"
+		},
+		{
+			name: "Rob Marshall",
+			email: "hello@rjmarshalluk.com",
+			username: "rjmarshalluk",
+			password: "rob1",
+			password_confirmation: "rob1"
+		}
+	]
+)
+
+jobs = Job.create (
+	[
+		{
+			title: "Senior Designer",
+			company: "Mint Digital",
+			company_url: "www.mintdigital.com",
+			job_url: "www.mintdigital.com/jobs",
+			job_email: "steve@mintdigital.com",
+			description: "Lovely job",
+			user_id: users.first.id
+		},
+		{
+			title: "Junior Designer",
+			company: "DeskBeers",
+			company_url: "www.deskbeers.com",
+			job_url: "www.deskbeers.com/jobs",
+			job_email: "steve@deskbeers.com",
+			description: "Drink beer, get paid",
+			user_id: users.last.id
+		}
+
+
+	]
+)

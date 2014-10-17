@@ -8,6 +8,27 @@
 </head>
 <body>
 
+<header>
+	<nav>
+		
+		<%= link_to "London Design Jobs", root_path %>
+
+			<% if logged_in? %>
+				<%= link_to "Log out", session_path, method: :delete  %>
+				<%= link_to "Submit a job", new_user_job_path(current_user.id) %>
+			<% else %>
+				<%= link_to "Log in", new_session_path %>
+				<%= link_to "Sign up", new_user_path %>
+			<% end %>
+	</nav>
+</header>
+
+<% flash.each do |key, value| %>
+	<div class="<% key %>">
+		<p><%= value %></p>
+	</div>
+<% end %>
+
 <%= yield %>
 
 </body>
