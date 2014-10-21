@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Design</title>
+  <title>Design Jobs LDN</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -50,11 +50,13 @@
 </header>
 
 <div id="content">
+	<div class="wrapper">
 		<% flash.each do |key, value| %>
 			<div class="<%= key %>">
 				<p><%= value %></p>
 			</div>
 		<% end %>
+	</div>
 	
 	<%= yield %>
 

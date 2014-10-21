@@ -1,5 +1,12 @@
 
 <div class="wrapper">
+
+	<div class="header">
+		<h1>Welcome back</h1>
+
+		<h2>If you haven't got an account, you can <%= link_to "create on here", new_user_path %></h2>
+	</div>
+
 	<%= simple_form_for :session, url: session_path, method: :post do |f| %>
 		<%= f.input :email %>
 		<%= f.input :password %>

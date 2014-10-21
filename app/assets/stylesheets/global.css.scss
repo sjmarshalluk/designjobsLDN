@@ -115,12 +115,9 @@ nav ul li a {
 	font-weight: 500;
 }
 
-nav ul li a:hover {
-	color: #0f5c88;
-}
-
+nav ul li a:hover,
 nav ul li a.selected {
-	color: #0f5c88;
+	color: #30353b;
 }
 
 
