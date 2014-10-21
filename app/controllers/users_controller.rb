@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   	if @user.save
   		flash[:success] = "Thanks for signing up!"
-  		redirect_to root_job_path
+  		redirect_to root_path
   	else
   		flash[:error] = "That didnt work"
   		render :new
