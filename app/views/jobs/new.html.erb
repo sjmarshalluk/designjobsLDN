@@ -1,13 +1,10 @@
 
-<%= simple_form_for [@user, @job] do |f| %>
+<div class="wrapper">
+	
+	<h1>Post a job</h1>
 
-	<%= f.input :title %>
-	<%= f.input :company %>
-	<%= f.input :company_url %>
-	<%= f.input :job_url %>
-	<%= f.input :job_email %>
-	<%= f.input :description %>
+	<p>For a limited time, posting a job on here will be free. It's as simple as filling out this form. We'll then check it through and get it live within 24 hours.</p>
 
-	<%= f.submit %>
-
-<% end %>
+	
+	<%= render "form" %>
+</div>

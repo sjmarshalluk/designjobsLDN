@@ -1,0 +1,13 @@
+
+<%= simple_form_for [@user, @job] do |f| %>
+
+	<%= f.input :title %>
+	<%= f.input :company %>
+	<%= f.input :company_url, :input_html => { :value => 'http://' } %>
+	<%= f.input :job_url, :input_html => { :value => 'http://' } %>
+	<%= f.input :job_email %>
+	<%= f.input :description %>
+
+	<%= f.submit class: 'submit' %>
+
+<% end %>

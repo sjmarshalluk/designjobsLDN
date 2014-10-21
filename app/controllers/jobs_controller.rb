@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
   def index
-  	@jobs = Job.published
+  	@jobs = Job.order(created_at: :desc).published
   end
 
   def show
@@ -18,7 +18,7 @@ class JobsController < ApplicationController
     @user = User.find(params[:user_id])
     @job = @user.jobs.new(job_params)
   	if @job.save
-  		flash[:success] = "That worked!"
+  		flash[:success] = "Thanks for submitting your job! Your listing should be live within the next 24 hours, and we'll drop you an email when it is."
   		redirect_to root_path
   	else
   		flash[:error] = "No. Try again."
@@ -28,10 +28,12 @@ class JobsController < ApplicationController
 
   def edit
     current_user_owns_job
+    @job = Job.find(params[:id])
   end
 
   def update
     current_user_owns_job
+    @job = Job.find(params[:id])
     if @job.update(job_params)
       flash[:success] = "All done"
       redirect_to root_path

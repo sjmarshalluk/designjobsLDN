@@ -1,7 +1,27 @@
-<h3><%= @job.title %></h3>
 
-<% if logged_in? and current_user == @job.user %>
 
-	<%= link_to "Edit", edit_job_path(@job) %>
 
-<% end %>
+<div class="wrapper">
+	<div class="back">
+		<%= link_to "Back to all posts", root_path %>
+	</div>
+	<h1><%= @job.title %></h1>
+	<h2>at <%= link_to @job.company, "#{@job.company_url}", target: 'blank' %></h2>
+	
+
+	<div class="desc">
+		<p><%= @job.description %></p>
+	</div>
+
+	<p><%= link_to "More about the job", @job.job_url, target: 'blank' %> (on the employers website)</p>
+
+	<p><%= mail_to @job.job_email, "Apply for this job", target: 'blank' %></p>
+
+	<p><em>This job was added <%= time_ago_in_words @job.created_at %> ago</em></p>
+
+	<% if logged_in? and current_user == @job.user %>
+
+		<p><%= link_to "Edit", edit_job_path(@job), class: 'button' %></p>
+
+	<% end %>
+</div>

@@ -1,0 +1,197 @@
+
+
+
+body {
+	color: #30353b;
+	font-family: "europa", sans-serif;
+	font-size: 16px;
+	height: 100%;
+	background: #f8f8f8;
+	line-height: 1.4;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 4em;
+	margin: 40px 0;
+	font-weight: 600;
+}
+h1 span {
+	font-weight: 300;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 1.4em;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 1.8;
+	font-size: 1.4em;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+a.button {
+	background-color: #c27b7b;
+	padding: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	border-bottom: none;
+}
+
+a.button:hover {
+	border-bottom: none;
+}
+
+
+header {
+	width: 30%;
+	height: 100%;
+	float: left;
+	padding: 40px;
+	background: $blue;
+	overflow-y: hidden;
+	position: fixed;
+	color: #ffffff;
+}
+
+header #logo {
+	width: 230px;
+	height: 62px;
+	display: block;
+	margin-bottom: 60px;
+}
+
+header #logo a {
+	background-image: url('/assets/designjobsldn.png');
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-indent: -9999px;
+}
+
+
+.middle {
+	min-height: 100%;
+
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+
+nav ul li a {
+	display: block;
+	padding: 10px 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+nav ul li a:hover {
+	color: #0f5c88;
+}
+
+nav ul li a.selected {
+	color: #0f5c88;
+}
+
+
+
+nav.footer,
+.push {
+	height: 55px; /* .push must be the same height as .footer */
+}
+
+nav.footer ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+nav.footer ul li a {
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.cta {
+	margin-bottom: 60px;
+}
+
+.cta a {
+	padding: 20px;
+	background: #924c4c;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wrapper {
+	padding: 20px 80px;
+}
+
+div.error, 
+div.success {
+ width: 100%;
+ color: #fff;
+ padding: 15px;
+ margin: 30px 0;
+}
+div.error {
+ background: #EA6363;
+}
+div.success {
+  background: #689f69;
+}
+
+div.error p, 
+div.success p {
+	margin-bottom: 0;
+}
+
+#content {
+	width: 70%;
+	float: right;
+	background-color: #f8f8f8;
+	padding-top: 40px;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+#content a {
+	color: $blue;
+	border-bottom: 2px solid #f8f8f8;
+}
+
+#content a:hover {
+	color: $blue;
+	border-bottom: 2px solid $blue;
+}
+
+.back {
+	font-size: 16px;
+	margin-top: 0px;
+}
+
+.back a {
+	color: #aaa;
+}
+
+

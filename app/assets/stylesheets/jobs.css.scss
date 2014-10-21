@@ -1,5 +1,88 @@
 // Place all the styles related to the jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
+
+ul#jobs-list {
 }
+
+ul#jobs-list li {
+	font-size: 1em;
+	padding: 40px 80px;
+	margin: 0;
+}
+
+ul#jobs-list li a {
+	color: #3b3b3b;
+	border-bottom: 2px solid $blue;
+	font-size: 2em;
+	margin: 40px 0 20px;
+	font-weight: 600;
+}
+
+ul#jobs-list li a span {
+	font-weight: 300;
+}
+
+
+
+ul#jobs-list li a:hover {
+}
+
+
+ul#jobs-list li small {
+	float: right;
+	margin-top: 17px;
+	color: #aaa;
+}
+
+
+
+
+
+
+form {
+	width: 100%;
+
+}
+
+div.input {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+div.input label {
+	width: 25%;
+	padding-top: 17px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+div.input input,
+div.input textarea {
+	width: 75%;
+	float: right;
+	padding: 15px 10px;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    border: 1px solid #f8f8f8;
+}
+
+div.input textarea {
+	height: 300px;
+}
+
+div.input input:focus,
+div.input textarea:focus { 
+	outline: none;
+    background-color: #f2e7e7;
+    border: 1px solid #c27b7b;
+}
+
+div.input input.submit {
+	border:1px solid red !important;
+}
+
