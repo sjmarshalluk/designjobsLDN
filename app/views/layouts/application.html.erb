@@ -20,9 +20,11 @@
 		<nav>
 			<ul>
 				<li><%= link_to_active_class "Jobs", "selected", root_path %></li>
-				<li><%= link_to_active_class "Freelancers", "selected", '/freelance' %></li>
+				<li><%= link_to_active_class "Projects", "selected", '/freelance' %></li>
 				<% if logged_in? %>
 					<li><%= link_to_active_class "Post a job", "selected", new_user_job_path(current_user.id) %></li>
+				<% else %>
+					<li><%= link_to "Post a job", new_user_path %></li>
 				<% end %>
 			</ul>
 		</nav>
@@ -39,7 +41,7 @@
 				<li><%= link_to "Log out", session_path, method: :delete  %></li>
 			<% else %>
 				<li><%= link_to "Log in", new_session_path %></li>
-				<li><%= link_to "Create an account to post a job", new_user_path %></li>
+				<li><%= link_to "Sign up", new_user_path %></li>
 			<% end %>
 			<li><%= link_to "About", '/about' %></li>
 		</ul>

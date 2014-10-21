@@ -6,29 +6,35 @@ body {
 	font-family: "europa", sans-serif;
 	font-size: 16px;
 	height: 100%;
-	background: #f8f8f8;
+	background: #fff;
 	line-height: 1.4;
 	font-weight: 300;
 }
 
 h1 {
-	font-size: 4em;
-	margin: 40px 0;
+	font-size: 2.5em;
+	margin: 40px 0 20px;
 	font-weight: 600;
+	text-align: center;
 }
+
 h1 span {
 	font-weight: 300;
 }
 
 h2 {
 	font-weight: 500;
-	font-size: 1.4em;
 	margin-bottom: 1em;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 p {
 	margin-bottom: 1em;
 	line-height: 1.8;
+}
+
+.desc p {
 	font-size: 1.4em;
 }
 
@@ -46,19 +52,23 @@ a {
 }
 
 a.button {
-	background-color: #c27b7b;
-	padding: 10px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #fff;
-	border-bottom: none;
+    background-color: $blue;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border:none;
+    padding: 10px;
+    margin: 30px 0 60px;
+    font-weight: 500;
+    border-bottom: none !important;
 }
 
 a.button:hover {
-	border-bottom: none;
+	border-bottom: none !important;
 }
 
 
@@ -144,7 +154,7 @@ nav.footer ul li a {
 }
 
 .wrapper {
-	padding: 20px 80px;
+	padding: 0 80px;
 }
 
 div.error, 
@@ -166,10 +176,28 @@ div.success p {
 	margin-bottom: 0;
 }
 
+
+
+.back {
+	font-size: 16px;
+	margin-top: 0px;
+	height: 62px;
+}
+
+.back a {
+	color: #aaa;
+	height: 100%;
+	display: inline-block;
+	background-color: #fafafa;
+	padding: 20px 15px 0; 
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+}
+
 #content {
 	width: 70%;
 	float: right;
-	background-color: #f8f8f8;
 	padding-top: 40px;
 	height: 100%;
 	overflow-y: hidden;
@@ -177,7 +205,7 @@ div.success p {
 
 #content a {
 	color: $blue;
-	border-bottom: 2px solid #f8f8f8;
+	border-bottom: 2px solid #fff;
 }
 
 #content a:hover {
@@ -185,13 +213,23 @@ div.success p {
 	border-bottom: 2px solid $blue;
 }
 
-.back {
-	font-size: 16px;
-	margin-top: 0px;
+
+
+
+.header {
+	margin-bottom: 60px;
 }
 
-.back a {
+.footer {
+	text-align: center;
+	padding: 30px 0 60px;
+	font-size: 1.4em;
+}
+
+.meta {
+	font-family: "freight-display-pro";
+	font-style: italic;
 	color: #aaa;
+	font-size: 18px;
+	text-align: center;
 }
-
-

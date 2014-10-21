@@ -138,6 +138,7 @@ GEM
       polyamorous (~> 1.1)
     rdoc (4.1.2)
       json (~> 1.4)
+    redcarpet (3.2.0)
     responders (1.0.0)
       railties (>= 3.2, < 5)
     sass (3.2.19)
@@ -191,6 +192,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.6)
   rails_12factor
+  redcarpet
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   simple_form

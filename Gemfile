@@ -55,4 +55,6 @@ gem 'simple_form'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 
+gem 'redcarpet'
+
 ruby '2.1.2'

@@ -7,7 +7,10 @@
 	<%= f.input :job_url, :input_html => { :value => 'http://' } %>
 	<%= f.input :job_email %>
 	<%= f.input :description %>
+	<em>This form accepts <a href="http://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a>.</em>
 
-	<%= f.submit class: 'submit' %>
+	<div class="submit">
+		<%= f.submit %>
+	</div>
 
 <% end %>

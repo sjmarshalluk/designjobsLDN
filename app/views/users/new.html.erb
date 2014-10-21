@@ -1,11 +1,22 @@
-<%= simple_form_for @user do |f| %>
 
-	<%= f.input :name %>
-	<%= f.input :username %>
-	<%= f.input :email %>
-	<%= f.input :password %>
-	<%= f.input :password_confirmation %>
 
-	<%= f.button :submit, "Sign up" %>
+<div class="wrapper">
 
-<% end %>
+	<div class="header">
+		<h1>Welcome</h1>
+
+		<h2>You need to create an account to post a job with us.</h2>
+	</div>
+
+	<%= simple_form_for @user do |f| %>
+
+		<%= f.input :name %>
+		<%= f.input :username %>
+		<%= f.input :email %>
+		<%= f.input :password %>
+		<%= f.input :password_confirmation %>
+
+		<%= f.button :submit, "Sign up" %>
+
+	<% end %>
+</div>
