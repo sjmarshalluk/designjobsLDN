@@ -29,7 +29,7 @@
 		</div>
 		<div>
 			<p><%= link_to "More about the job", @job.job_url, target: 'blank' %> (on the company website)</p>
-			<p><%= mail_to @job.job_email, "Apply for this job", target: 'blank' %></p>
+			<p><%= mail_to @job.job_email, "Apply for this job" %></p>
 			<% if logged_in? and current_user == @job.user %>
 				<p><%= link_to "Edit", edit_job_path(@job), class: 'button' %></p>
 			<% end %>
