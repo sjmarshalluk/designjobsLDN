@@ -2,7 +2,7 @@ ActiveAdmin.register Job do
 
   controller do
     def permitted_params
-      params.permit job: [:title, :company, :company_url, :job_url, :email, :description, :approved, :user_id]
+      params.permit job: [:title, :company, :company_url, :job_url, :email, :description, :approved, :user_id, :area_of_london, :salary, :how_to_apply]
     end
   end
 
@@ -14,6 +14,9 @@ ActiveAdmin.register Job do
     column :created_at
     column :approved
     column :user_id
+    column :area_of_london
+    column :salary
+    column :how_to_apply
     actions
 
 
