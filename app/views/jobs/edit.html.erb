@@ -1,2 +1,32 @@
+<div class="wrapper">
+	
+	<h1>Edit your job listing</h1>
 
-<%= render "form" %>
+	
+	<%= simple_form_for [@user, @job] do |f| %>
+
+		<%= f.input :title %>
+
+		<%= f.input :company %>
+
+		<%= f.input :area_of_london %>
+
+		<%= f.input :company_url %>
+
+		<%= f.input :job_email %>
+
+		<%= f.input :description %>
+		<p>This field accepts <a href="http://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a> (and so does the next one).</p>
+
+		<%= f.input :how_to_apply %>
+
+		<%= f.input :job_url %>
+
+		<%= f.input :salary %>
+
+		<div class="submit">
+			<%= f.submit %>
+		</div>
+
+	<% end %>
+</div>

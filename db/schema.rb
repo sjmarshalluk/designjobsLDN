@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141017125523) do
+ActiveRecord::Schema.define(version: 20141022082000) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -53,10 +53,13 @@ ActiveRecord::Schema.define(version: 20141017125523) do
     t.string   "job_url"
     t.string   "job_email"
     t.integer  "user_id"
-    t.boolean  "approved",    default: false
+    t.boolean  "approved",       default: false
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "salary"
+    t.text     "how_to_apply"
+    t.string   "area_of_london"
   end
 
   create_table "users", force: true do |t|

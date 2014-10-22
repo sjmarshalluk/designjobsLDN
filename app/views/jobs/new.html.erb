@@ -3,8 +3,44 @@
 	
 	<h1>Post a job</h1>
 
-	<p>For a limited time, posting a job on here will be free. It's as simple as filling out this form. We'll then check it through and get it live within 24 hours.</p>
+	<div class="desc">
+		<p>For a limited time, posting a job on here will be free. It's as simple as filling out this form. We'll then check it through and get it live within 24 hours.</p>
+	</div>
 
 	
-	<%= render "form" %>
+	
+	<%= simple_form_for [@user, @job] do |f| %>
+
+		<%= f.input :title %>
+		<p>Eg. 'Junior Designer' or 'UX designer'</p>
+
+		<%= f.input :company %>
+		<p>Name of the company</p>
+
+		<%= f.input :area_of_london %>
+		<p>Where the position is based.</p>
+
+		<%= f.input :company_url %>
+		<p>Include 'http://'</p>
+
+		<%= f.input :job_email %>
+		<p>If you'd like candidates to email applications, enter your email here</p>
+
+		<%= f.input :description %>
+		<p>This field accepts <a href="http://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a> (and so does the next one). Be as descriptive as you can be.</p>
+
+		<%= f.input :how_to_apply %>
+		<p>Specify how candidates should apply for the position e.g. Email with CV and portfolio or complete a Google Form etc.</p>
+
+		<%= f.input :job_url %>
+		<p>If you're job is advertised on your own website too, enter the URL here</p>
+
+		<%= f.input :salary %>
+		<p>Eg. 300 per day, or 20,000 pa.</p>
+
+		<div class="submit">
+			<%= f.submit %>
+		</div>
+
+	<% end %>
 </div>

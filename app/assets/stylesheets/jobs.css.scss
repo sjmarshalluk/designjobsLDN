@@ -7,7 +7,7 @@ ul#jobs-list {
 
 ul#jobs-list li {
 	font-size: 1em;
-	padding: 40px 80px;
+	padding: 40px 0;
 	margin: 0;
 }
 
@@ -42,15 +42,22 @@ ul#jobs-list li small {
 
 form {
 	width: 100%;
+}
 
+form p {
+	width: 75%;
+	float: right;
+	font-size: 14px;
+	color: #aaa;
 }
 
 div.input {
 	padding: 10px 0;
 	overflow: hidden;
+	clear: both;
 }
 
-div.input label {
+label {
 	width: 25%;
 	padding-top: 17px;
 	display: inline-block;
@@ -59,8 +66,8 @@ div.input label {
 	font-size: 14px;
 }
 
-div.input input,
-div.input textarea {
+input,
+textarea {
 	width: 75%;
 	float: right;
 	padding: 15px 10px;
@@ -68,15 +75,15 @@ div.input textarea {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ddd;
 }
 
-div.input textarea {
+textarea {
 	height: 300px;
 }
 
-div.input input:focus,
-div.input textarea:focus { 
+input:focus,
+textarea:focus { 
 	outline: none;
     background-color: lighten($blue, 40% );
     border: 1px solid $blue;
@@ -97,4 +104,51 @@ div.input textarea:focus {
     font-weight: 500;
 }
 
+.mc-field-group {
+	display: block;
+	margin-bottom: 38px;
+}
 
+#mc_embed_signup {
+	margin-top: 60px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+
+
+ul#jobs-list li {
+	font-size: 1em;
+	padding: 20px 20px;
+	margin: 0;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+ul#jobs-list li small {
+	display: none;
+}
+
+form p {
+	width: 100%;
+	float: left;
+}
+
+
+label {
+	width: 100%;}
+
+input,
+textarea {
+	width: 100%;
+	float: left;
+}
+
+}

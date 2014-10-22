@@ -36,7 +36,10 @@ jobs = Job.create (
 			job_url: "www.mintdigital.com/jobs",
 			job_email: "steve@mintdigital.com",
 			description: "Lovely job",
-			user_id: users.first.id
+			user_id: "2",
+			area_of_london: "Hackney",
+			salary: "20,000",
+			how_to_apply: "Send us an email"
 		},
 		{
 			title: "Junior Designer",
@@ -45,7 +48,10 @@ jobs = Job.create (
 			job_url: "www.deskbeers.com/jobs",
 			job_email: "steve@deskbeers.com",
 			description: "Drink beer, get paid",
-			user_id: users.last.id
+			user_id: "2",
+			area_of_london: "Shoreditch",
+			salary: "10,000",
+			how_to_apply: "Come by and say helle"
 		}
 
 

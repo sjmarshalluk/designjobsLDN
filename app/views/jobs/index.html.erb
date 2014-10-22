@@ -1,17 +1,21 @@
 
 
-<ul id="jobs-list">
+<div class="wrapper">
+	<h2>Latest Jobs</h2>
 
-<% @jobs.each do |job| %>
+	<ul id="jobs-list">
 
-	<li>
-		<%= link_to job_path(job) do %>
-			<%= job.title %><span> at <%= job.company %></span> 
+	<% @jobs.each do |job| %>
 
-		<% end %>
-		<small><%= time_ago_in_words job.created_at %> ago</small>
-	</li>
+		<li>
+			<%= link_to job_path(job) do %>
+				<%= job.title %><span> at <%= job.company %></span> 
 
-<% end %>
+			<% end %>
+			<small><%= time_ago_in_words job.created_at %> ago</small>
+		</li>
 
-</ul>
+	<% end %>
+
+	</ul>
+</div>
