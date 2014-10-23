@@ -37,8 +37,14 @@ p {
 	line-height: 1.8;
 }
 
-.desc p {
+.desc p,
+.desc ul,
+.desc ol {
 	font-size: 1.4em;
+}
+
+.desc ul {
+	list-style-type: disc;
 }
 
 em {
