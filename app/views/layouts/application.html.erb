@@ -18,6 +18,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+
 </head>
 <body>
 
@@ -29,7 +30,7 @@
 
 	<h1>A brand new site dedicated to design jobs in London</h1>
 
-	<nav>
+	<nav class="nav-collapse">
 		<ul>
 			<li><%= link_to_active_class "Jobs", "selected", root_path %></li>
 			<li><%= link_to_active_class "Freelancers", "selected", '/freelance' %></li>
@@ -47,7 +48,10 @@
 			<li class="twitter"><a href="http://www.twitter.com/designjobsldn" target="_blank">Twitter</a></li>
 		</ul>
 	</nav>
-
+	
+	<script>
+      var navigation = responsiveNav(".nav-collapse");
+    </script>
 
 	
 </header>
