@@ -376,6 +376,11 @@ nav ul li a {
   padding:20px;
 }
 
+nav ul li.twitter a {
+	margin-left: 20px;
+	background-repeat: no-repeat;
+}
+
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
