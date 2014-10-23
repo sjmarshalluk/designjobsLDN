@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 	get '/about' => 'pages#about'
 	get '/freelance' => 'pages#freelance'
+  get '/projects' => 'pages#projects'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

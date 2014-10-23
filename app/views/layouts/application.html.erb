@@ -32,7 +32,7 @@
 	<nav>
 		<ul>
 			<li><%= link_to_active_class "Jobs", "selected", root_path %></li>
-			<li><%= link_to_active_class "Projects", "selected", '/freelance' %></li>
+			<li><%= link_to_active_class "Freelancers", "selected", '/freelance' %></li>
 			<% if logged_in? %>
 				<li><%= link_to_active_class "Post a job", "selected", new_user_job_path(current_user.id) %></li>
 			<% else %>
