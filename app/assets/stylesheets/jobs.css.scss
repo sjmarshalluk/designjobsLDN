@@ -13,7 +13,6 @@ ul#jobs-list li {
 
 ul#jobs-list li a {
 	color: #3b3b3b;
-	border-bottom: 2px solid $blue;
 	font-size: 2em;
 	margin: 40px 0 20px;
 	font-weight: 600;
@@ -21,16 +20,18 @@ ul#jobs-list li a {
 
 ul#jobs-list li a span {
 	font-weight: 300;
+	display: block;
 }
 
 
 
 ul#jobs-list li a:hover {
+	border-bottom: #fff;
 }
 
 
 ul#jobs-list li small {
-	float: right;
+	float: left;
 	margin-top: 17px;
 	color: #aaa;
 }
